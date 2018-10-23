@@ -39,15 +39,6 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
 
-    if(cmd === `${prefix}limpar`){
-
-        if(!message.member.hasPermission("MANAGE_MESSAGES")) return errors.noPerms(message, "MANAGE_MESSAGES");
-        if(!args[0]) return message.channel.send("Especifique quantas linhas.").then(msg => msg.delete(5000));
-          message.channel.bulkDelete(args[0]).then(() => {
-          message.channel.send(`Limpei ${args[0]} mensagens.`).then(msg => msg.delete(5000));
-        });
-        }
-
     if(cmd === `${prefix}testewelcome`){
         let embed = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
@@ -56,6 +47,15 @@ bot.on("message", async message => {
         .setColor("#b70f0f")
         message.channel.send(embed);
     }
+    
+    if(cmd === `${prefix}limpar`){
+
+        if(!message.member.hasPermission("MANAGE_MESSAGES"));
+        if(!args[0]) return message.channel.send("Especifique quantas linhas.").then(msg => msg.delete(5000));
+          message.channel.bulkDelete(args[0]).then(() => {
+          message.channel.send(`Limpei ${args[0]} mensagens.`).then(msg => msg.delete(5000));
+        });
+        }
 
     if(cmd === `${prefix}mute`){
         if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("❌ | Você não tem permissão!")

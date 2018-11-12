@@ -10,7 +10,7 @@ bot.login(process.env.TOKEN);
 bot.on("ready", async => {
     console.log(`${bot.user.username} Conectado com sucesso!`)
     console.log(`${bot.user.id}`)
-    bot.user.setPresence({ status: 'PLAYING', game: { name: `redecolorcraft`}});
+    bot.user.setPresence({ status: 'PLAYING', game: { name: `Minecraft super Barato!!!`}});
 });
 
 bot.on("guildMemberAdd", async (member) => {

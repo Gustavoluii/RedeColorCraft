@@ -16,10 +16,10 @@ bot.on("ready", async => {
 bot.on("guildMemberAdd", async (member) => {
     let embed = new Discord.RichEmbed()
     .setAuthor(member.user.tag, member.user.displayAvatarURL)
-    .addField(":fire: Seja muito bem-vindo(a)!", `${member}, Seja bem-vindo ao **Rede Color Craft**!\n\n📋 Leia as <#503776227346219009> e os <#503776308522778626> do servidor!`)
-    .setFooter("RedeColorCraft © Todos direitos reservados.")
+    .addField(":fire: Seja muito bem-vindo(a)!", `${member}, Seja bem-vindo ao **Color Shop**!\n\n📋 Leia as <#504661024725532683> e os <#504661137191600128> do servidor!`)
+    .setFooter("ColorShop © Todos direitos reservados.")
     .setColor("#b70f0f")
-    bot.channels.get("503775413256847363").send(embed);
+    bot.channels.get("511666599342768128").send(embed);
 
 });
 

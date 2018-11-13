@@ -25,7 +25,7 @@ bot.on("guildMemberAdd", async (member) => {
 
 bot.on("guildMemberAdd", member => {
     console.log(`${member.user.username} entrou no servidor.`);
-    var role = member.guild.roles.find("name", "🎮 Membro");
+    var role = member.guild.roles.find("name", "👤Membro");
     member.addRole(role)
 });
 

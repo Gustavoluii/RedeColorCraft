@@ -16,7 +16,7 @@ bot.on("ready", async => {
 bot.on("guildMemberAdd", async (member) => {
     let embed = new Discord.RichEmbed()
     .setAuthor(member.user.tag, member.user.displayAvatarURL)
-    .addField(":fire: Seja muito bem-vindo(a)!", `${member}, Seja bem-vindo ao **Color Shop**!\n\n📋 Leia as <#504661024725532683> e os <#504661137191600128> do servidor!`)
+    .addField(":fire: Seja muito bem-vindo(a)!", `${member}, Seja bem-vindo ao **Color Shop**!\n\n📋 Leia as <#517678690633646091> e os <#517678970481672219> do servidor!`)
     .setFooter("ColorShop © Todos direitos reservados.")
     .setColor("#b70f0f")
     bot.channels.get("511666599342768128").send(embed);
